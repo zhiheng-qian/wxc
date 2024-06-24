@@ -344,7 +344,9 @@ input::placeholder{
 	const timeinterval = setInterval(updateClock, 1000);
 	}
 
-	const deadline = new Date(Date.parse(new Date()) + 28 * 24 * 60 * 60 * 1000);
+	const deadline = new Date('2024-07-25T00:00:00');
+
+	// const deadline = new Date(Date.parse("2024-06-") + 28 * 24 * 60 * 60 * 1000);
 	initializeClock('countdown-clock', deadline);
 </script>
 
