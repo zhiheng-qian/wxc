@@ -113,8 +113,7 @@ input::placeholder{
 }
 .form-group button.submit-button {
     padding: 18px 30px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 5px;
     background-color: #0043ee;
     border: none;
 	cursor: pointer;
@@ -228,7 +227,7 @@ input::placeholder{
 
 						<div class="page-title">
 
-							<h1>Launching soon!</h1>
+							<h1>Launching soon.</h1>
 
 							<div id="countdown-clock">
 								<div class="time">
@@ -273,8 +272,6 @@ input::placeholder{
 						<div class="social-links">
 							<ul>
 								<li><a href="#"><i class="icon icon-facebook"></i></a></li>
-								<li><a href="#"><i class="icon icon-github"></i></a></li>
-								<li><a href="#"><i class="icon icon-google-plus"></i></a></li>
 								<li><a href="#"><i class="icon icon-linkedin"></i></a></li>
 								<li><a href="#"><i class="icon icon-twitter"></i></a></li>
 							</ul>
@@ -346,7 +343,6 @@ input::placeholder{
 
 	const deadline = new Date('2024-07-25T00:00:00');
 
-	// const deadline = new Date(Date.parse("2024-06-") + 28 * 24 * 60 * 60 * 1000);
 	initializeClock('countdown-clock', deadline);
 </script>
 

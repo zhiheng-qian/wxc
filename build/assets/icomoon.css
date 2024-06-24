@@ -28,17 +28,14 @@
 .icon-facebook:before {
   content: "\ea90";
 }
+.icon-instagram:before {
+  content: "\ea05";
+}
 .icon-twitter:before {
   content: "\ea96";
 }
 .icon-play2:before {
   content: "\ea15";
-}
-.icon-github:before {
-  content: "\eab0";
-}
-.icon-google-plus:before {
-  content: "\ea8b";
 }
 .icon-bars:before {
   content: "\f0c9";
