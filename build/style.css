@@ -449,7 +449,7 @@ h2.section-subtitle.liner:before {
 }
 h3.section-title {
     font-family: "Jost", Georgia, serif;
-    font-size: 2.6em;
+    font-size: 2.4em;
     font-weight: 600;
     line-height: 1.5;
     margin-bottom: 70px;
@@ -547,6 +547,7 @@ nav#navbar {
 
 @media only screen and (max-width: 1180px) {
     .main-logo {
+      width: 50%;
       margin: 0 auto;
     }
     .main-menu ul.menu-list {
@@ -603,8 +604,12 @@ nav#navbar {
    #navbar .btn-hvr-effect {
       display: none;
   }
+   #navbar .btn-switch {
+    margin-left: 150px;
+  }
   .main-logo {
-      width: 100%;
+      width: 60%;
+      margin-left: 50px;
       text-align: right;
   }
 }
@@ -706,7 +711,7 @@ nav#navbar {
 }
 #about .detail-entry {
     width: 45%;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 #about .detail-entry .detail-wrap {
     margin-top: 60px;
@@ -743,7 +748,7 @@ nav#navbar {
 }
 #services .detail-entry {
     width: 35%;
-    padding-top: 125px;
+    padding-top: 135px;
 }
 #services .service-grid {
     width: 65%;
