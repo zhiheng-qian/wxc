@@ -1,366 +1,478 @@
 <!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<title>WxC International GmbH</title>
-		<meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <meta name="format-detection" content="telephone=no">
-	    <meta name="apple-mobile-web-app-capable" content="yes">
-	    <meta name="author" content="">
-	    <meta name="keywords" content="">
-	    <meta name="description" content="">
+<html lang="en">
+<head>
+    <title>WxC International GmbH</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
 
-	    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-	    <link rel="stylesheet" type="text/css" href="fonts/icomoon/icomoon.css">
-	    <link rel="stylesheet" type="text/css" href="css/vendor.css">
-	    <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="icon" type="image/x-icon" href="images/icon.png">
-		
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;700&family=Jost:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="fonts/icomoon/icomoon.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;700&family=Jost:wght@300;400;700&display=swap" rel="stylesheet">
 
-		<!-- script ================================================== -->
-		<script src="js/modernizr.js"></script>
-
-
-	</head>
+    <!-- script ================================================== -->
+    <script src="js/modernizr.js"></script>
+</head>
 
 <body>
 
 <div id="header-wrap">
-	<header id="header">
-		<div class="container">
-			<div class="inner-content">
-				<div class="grid">
-					<div class="main-logo">
-						<a href="index.html"><img src="images/logo.png" width="300" height="100" alt="logo"></a>
-					</div>
+    <header id="header">
+        <div class="container">
+            <div class="inner-content">
+                <div class="grid">
+                    <div class="main-logo">
+                        <a href="index.html"><img src="images/logo.png" width="300" height="100" alt="logo"></a>
+                    </div>
 
-					<nav id="navbar">
-						<div class="main-menu">
-							<ul class="menu-list">
-								<li class="menu-item active"><a href="#home" data-effect="Home">主页</a></li>
-								<li class="menu-item"><a href="#about" class="nav-link" data-effect="About">关于我们</a></li>
-								<li class="menu-item"><a href="#services" class="nav-link" data-effect="Services">业务板块</a></li>
-								<li class="menu-item"><a href="#price-table" class="nav-link" data-effect="Price table">公司优势</a></li>
-							</ul>
+                    <nav id="navbar">
+                        <div class="main-menu">
+                            <ul class="menu-list">
+                                <li class="menu-item active"><a href="#home" data-effect="Home" class="lang" key="home">Home</a></li>
+                                <li class="menu-item"><a href="#about" class="nav-link lang" data-effect="About" key="about">About Us</a></li>
+                                <li class="menu-item"><a href="#services" class="nav-link lang" data-effect="Services" key="services">Services</a></li>
+                                <li class="menu-item"><a href="#price-table" class="nav-link lang" data-effect="Price table" key="advantages">Advantages</a></li>
+                            </ul>
 
-							<div class="hamburger">
-				                <span class="bar"></span>
-				                <span class="bar"></span>
-				                <span class="bar"></span>
-				            </div>
-						</div>											
-					
-						<a href="mailto:info@wxcintl.com" class="btn-hvr-effect">
-							<span>联系我们</span>
-							<i class="icon icon-long-arrow-right"></i>
-						</a>
+                            <div class="hamburger">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </div>
 
-					</nav>
+                        <div class="btn-switch">
+                            <a id="language-toggle" class="btn-accent">中文</a>
+                        </div>
 
-				</div>
-			</div>
-		</div>
-	</header>		
+                        <a href="mailto:info@wxcintl.com" class="btn-hvr-effect">
+                            <span class="lang" key="contact_us">Contact Us</span>
+                            <i class="icon icon-long-arrow-right"></i>
+                        </a>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>     
 </div>
 
 <section id="billboard">
-	<div class="main-banner pattern-overlay">
-		<div class="banner-content" data-aos="fade-up">
-		    <h2 class="section-subtitle ">我们始终秉承</h2>
-			<h3 class="banner-title">立足德国，沟通世界</h3>
-			<h3>专注 | 专业 |  高效</h3>
-			<div class="btn-wrap">
-				<a href="#" class="btn-accent">联系我们</a>
-			</div>
-		</div>
-		<figure>
-			<img src="images/main-banner.png" alt="banner" class="banner-image">
-		</figure> 
-	</div>
+    <div class="main-banner pattern-overlay">
+        <div class="banner-content" data-aos="fade-up">
+            <h2 class="section-subtitle lang" key="motto">Our Motto</h2>
+            <h3 class="banner-title lang" key="slogan">Connecting Germany with the World</h3>
+            <h3 class="lang" key="values">Focus | Professionalism | Efficiency</h3>
+            <div class="btn-wrap">
+                <a href="#" class="btn-accent lang" key="contact_us">Contact Us</a>
+            </div>
+        </div>
+        <figure>
+            <img src="images/main-banner.png" alt="banner" class="banner-image">
+        </figure> 
+    </div>
 </section>
 
 <button id="scrollToTopBtn">Top</button>
 
 <section id="about">
-	<div class="container">
-		<div class="row">
-			<div class="inner-content">
-				<div class="company-detail">
-					<div class="grid">
-						<figure>
-							<img src="images/single-image.png" alt="book" class="single-image">
-						</figure>
-						<div class="detail-entry" data-aos="fade-up">
+    <div class="container">
+        <div class="row">
+            <div class="inner-content">
+                <div class="company-detail">
+                    <div class="grid">
+                        <figure>
+                            <img src="images/single-image.png" alt="book" class="single-image">
+                        </figure>
+                        <div class="detail-entry" data-aos="fade-up">
 
-							<div class="section-header">
-								<h2 class="section-subtitle liner">关于我们</h2>
-								<h3 class="section-title"></h3>
-							</div>
+                            <div class="section-header">
+                                <h2 class="section-subtitle liner lang" key="about_us">About Us</h2>
+                                <h3 class="section-title"></h3>
+                            </div>
 
-							<div class="detail-wrap">
-								<p>德国WxC国际贸易公司创立于2024年，是一家集国际贸易，物流仓储及为海内外企业提供咨询与定制服务为一体的多元化公司。公司总部位于交通便利的舍内费尔德，紧邻柏林勃兰登堡机场。
-公司始终秉承立足德国，沟通世界的理念，以及专业专注的态度，协同专业，高效，创新的经营团队为每一位客户提供最优质的服务。</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                            <div class="detail-wrap">
+                                <p class="lang" key="about_us_text">WxC International GmbH was founded in 2024 as a diversified company integrating international trade, logistics warehousing, and consulting services for overseas enterprises. The company is headquartered in Schönefeld, near Berlin Brandenburg Airport, known for its convenient transportation. Upholding the concept of connecting Germany with the world and a professional, focused attitude, our team of experts provides the best service to every client.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section id="services">
-	<div class="container">
-		<div class="row">
-			<div class="inner-content">
-				<div class="service-content">
-						<div class="grid">
-							<div class="detail-entry">
+    <div class="container">
+        <div class="row">
+            <div class="inner-content">
+                <div class="service-content">
+                    <div class="grid">
+                        <div class="detail-entry">
 
-								<div class="section-header">
-									<h2 class="section-subtitle liner">业务介绍</h2>
-									<h3 class="section-title">企业活动定制</h3>
-									<h3 class="section-title">国际贸易</h3>
-									<h3 class="section-title">物流仓储服务</h3>
-								</div>
-						
-							</div>
+                            <div class="section-header">
+                                <h2 class="section-subtitle liner lang" key="services_intro">Our Services</h2>
+                                <h3 class="section-title lang" key="event_customization">Event Customization</h3>
+                                <h3 class="section-title lang" key="international_trade">International Trade</h3>
+                                <h3 class="section-title lang" key="logistics_warehousing">Logistics & Warehousing</h3>
+                            </div>
+                        
+                        </div>
 
-							<div class="service-grid grid" data-aos="fade-up">
+                        <div class="service-grid grid" data-aos="fade-up">
 
-								<div class="column single-column">
-									<div class="icon-box">
-										<img src="images/icons/products.png" alt="branding">
-										<div class="title">食品 酒</div>
-									</div>
-								</div>
+                            <div class="column single-column">
+                                <div class="icon-box">
+                                    <img src="images/icons/products.png" alt="branding">
+                                    <div class="title lang" key="food_beverage">Food & Beverage</div>
+                                </div>
+                            </div>
 
-								<div class="column odd-column">
-									<div class="icon-box">
-										<img src="images/icons/analysis.png" alt="branding">
-										<div class="title">品牌营销与推广</div>
-									</div>
-									<div class="icon-box">
-										<img src="images/icons/skincare.png" alt="animation">
-										<div class="title">日用百货 化妆品</div>
-									</div>
-									<div class="icon-box">
-										<img src="images/icons/express-delivery.png" alt="animation">
-										<div class="title">海运 铁运 空运</div>
-									</div>
-								</div>
+                            <div class="column odd-column">
+                                <div class="icon-box">
+                                    <img src="images/icons/analysis.png" alt="branding">
+                                    <div class="title lang" key="brand_marketing">Brand Marketing & Promotion</div>
+                                </div>
+                                <div class="icon-box">
+                                    <img src="images/icons/skincare.png" alt="animation">
+                                    <div class="title lang" key="daily_goods">Daily Goods & Cosmetics</div>
+                                </div>
+                                <div class="icon-box">
+                                    <img src="images/icons/express-delivery.png" alt="animation">
+                                    <div class="title lang" key="shipping">Sea, Rail, Air Shipping</div>
+                                </div>
+                            </div>
 
-								<div class="column">
-									<div class="icon-box">
-										<img src="images/icons/analyst.png" alt="branding">
-										<div class="title">活动策划</div>
-									</div>
-									<div class="icon-box">
-										<img src="images/icons/dress.png" alt="animation">
-										<div class="title">箱包 服饰</div>
-									</div>
-									<div class="icon-box">
-										<img src="images/icons/customs-inspection.png" alt="animation">
-										<div class="title">清关服务</div>
-									</div>
-								</div>
+                            <div class="column">
+                                <div class="icon-box">
+                                    <img src="images/icons/analyst.png" alt="branding">
+                                    <div class="title lang" key="event_planning">Event Planning</div>
+                                </div>
+                                <div class="icon-box">
+                                    <img src="images/icons/dress.png" alt="animation">
+                                    <div class="title lang" key="apparel">Apparel & Accessories</div>
+                                </div>
+                                <div class="icon-box">
+                                    <img src="images/icons/customs-inspection.png" alt="animation">
+                                    <div class="title lang" key="customs">Customs Clearance</div>
+                                </div>
+                            </div>
 
-								<div class="column odd-column">
-									<div class="icon-box">
-										<img src="images/icons/cubes.png" alt="branding">
-										<div class="title">展会展台设计</div>
-									</div>
-									<div class="icon-box">
-										<img src="images/icons/hairdryer.png" alt="animation">
-										<div class="title">家具 家电</div>
-									</div>
-									<div class="icon-box">
-										<img src="images/icons/warehouse.png" alt="animation">
-										<div class="title">仓储服务</div>
-									</div>
-								</div>
+                            <div class="column odd-column">
+                                <div class="icon-box">
+                                    <img src="images/icons/cubes.png" alt="branding">
+                                    <div class="title lang" key="exhibition">Exhibition Booth Design</div>
+                                </div>
+                                <div class="icon-box">
+                                    <img src="images/icons/couch.png" alt="animation">
+                                    <div class="title lang" key="furniture">Furniture & Appliances</div>
+                                </div>
+                                <div class="icon-box">
+                                    <img src="images/icons/warehouse.png" alt="animation">
+                                    <div class="title lang" key="warehousing">Warehousing Services</div>
+                                </div>
+                            </div>
 
-								<div class="column single-column">
-									<div class="icon-box">
-										<img src="images/icons/factory-machine.png" alt="branding">
-										<div class="title">工业机械 零部件</div>
-									</div>
-								</div>
-
-
-							</div>
-
-							</div><!--grid-->
-						</div>
-
-				</div><!--inner-content-->
-			</div>
-		</div>
-	</div>
+                            <div class="column single-column">
+                                <div class="icon-box">
+                                    <img src="images/icons/factory-machine.png" alt="branding">
+                                    <div class="title lang" key="industrial">Industrial Machinery & Parts</div>
+                                </div>
+                            </div>
+                        </div><!--grid-->
+                    </div><!--inner-content-->
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section id="price-table">
-	<div class="container">
-		<div class="row">
-			<div class="inner-content">
+    <div class="container">
+        <div class="row">
+            <div class="inner-content">
 
-						<div class="section-header align-center">
-							<h1 class="section-subtitle">我们的优势</h1>
-						</div>
+                <div class="section-header align-center">
+                    <h1 class="section-subtitle lang" key="advantages">Our Advantages</h1>
+                </div>
 
-						<div class="grid">
+                <div class="grid">
 
-							<div class="column align-center">
-								<i class="icon">
-									<img src="images/icons/customer-service.png" width="80" alt="branding">
-								</i>
-								<div class="price">
-									<h3>专业的</h3>
-								</div>
-								<div class="price">
-									<strong>全程服务</strong>
-								</div>
-								<ul>
-									<li>实行 </li>
-									<li>所有贸易订单 </li>
-									<li>的全方位跟踪 </li>
-								</ul>							
-							</div>
+                    <div class="column align-center">
+                        <i class="icon">
+                            <img src="images/icons/customer-service.png" width="80" alt="branding">
+                        </i>
+                        <div class="price">
+                            <h3 class="lang" key="professional_service">Professional Service</h3>
+                        </div>
+                        <div class="price">
+                            <strong class="lang" key="full_service">Full Service</strong>
+                        </div>
+                        <ul>
+                            <li class="lang" key="tracking_orders1">Tracking </li>
+                            <li class="lang" key="tracking_orders2">All </li>
+                            <li class="lang" key="tracking_orders3">Trade Orders </li>
+                        </ul>                       
+                    </div>
 
-							<div class="column align-center">
-								<i class="icon">
-									<img src="images/icons/idea-exchange.png" width="80" alt="branding">
-								</i>
-								<div class="price">
-									<h3>丰富的</h3>
-								</div>
-								<div class="price">
-									<strong>行业经验</strong>
-								</div>
-								<ul>
-									<li>完成 </li>
-									<li>多种类型商品 </li>
-									<li>的全球贸易 </li>
-								</ul>							
-							</div>
+                    <div class="column align-center">
+                        <i class="icon">
+                            <img src="images/icons/idea-exchange.png" width="80" alt="branding">
+                        </i>
+                        <div class="price">
+                            <h3 class="lang" key="industry_experience">Rich Industry Experience</h3>
+                        </div>
+                        <div class="price">
+                            <strong class="lang" key="global_trade">Global Trade</strong>
+                        </div>
+                        <ul>
+                            <li class="lang" key="variety_goods1">Trading </li>
+                            <li class="lang" key="variety_goods2">Variety </li>
+                            <li class="lang" key="variety_goods3">Goods </li>
+                        </ul>                      
+                    </div>
 
-							<div class="column align-center">
-								<i class="icon">
-									<img src="images/icons/best-customer-experience.png" width="80" alt="branding">
-								</i>
-								<div class="price">
-									<h3>良好的</h3>
-								</div>
-								<div class="price">
-									<strong>业界口碑</strong>
-								</div>
-								<ul>
-									<li>实现 </li>
-									<li>全球合作伙伴 </li>
-									<li>的一致好评 </li>
-								</ul>							
-							</div>
+                    <div class="column align-center">
+                        <i class="icon">
+                            <img src="images/icons/best-customer-experience.png" width="80" alt="branding">
+                        </i>
+                        <div class="price">
+                            <h3 class="lang" key="good_reputation">Excellent Reputation</h3>
+                        </div>
+                        <div class="price">
+                            <strong class="lang" key="partner_approval">Partner Approval Worldwide</strong>
+                        </div>
+                        <ul>
+                            <li class="lang" key="consistent_praise1">Getting </li>
+                            <li class="lang" key="consistent_praise2">Consistent </li>
+                            <li class="lang" key="consistent_praise3">Praise </li>
+                        </ul>                        
+                    </div>
 
-						</div><!--grid-->	
+                </div><!--grid-->    
 
-				</div><!--inner-content-->
-			</div>
-		</div>
+            </div><!--inner-content-->
+        </div>
+    </div>
 </section>
 
 <footer id="footer">
-	<div class="container">
-		<div class="row">
-			<div class="inner-content">
-					<div class="footer-menu-list" data-aos="fade-up">
-						<div class="grid">
+    <div class="container">
+        <div class="row">
+            <div class="inner-content">
+                <div class="footer-menu-list" data-aos="fade-up">
+                    <div class="grid">
 
-							<div class="footer-menu">
-								<h3>板块链接</h3>
-								<ul class="menu-list">
-									<li class="menu-item">
-										<a href="#home">主页</a>
-									</li>
-									<li class="menu-item">
-										<a href="#about">关于我们</a>
-									</li>
-									<li class="menu-item">
-										<a href="#services">业务介绍</a>
-									</li>
-									<li class="menu-item">
-										<a href="#price-table">公司优势</a>
-									</li>							
-								</ul>
-							</div>
+                        <div class="footer-menu">
+                            <h3 class="lang" key="footer_links">Footer Links</h3>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#home" class="lang" key="home">Home</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#about" class="lang" key="about">About Us</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#services" class="lang" key="services">Services</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#price-table" class="lang" key="advantages">Advantages</a>
+                                </li>                           
+                            </ul>
+                        </div>
 
-							<div class="footer-menu">
-								<h3>联系方式</h3>
-								<ul class="menu-list">
-									<li class="menu-item">
-										<strong>地址</strong>
-										Willy-Brandt-Platz 2, 12529, Schönefeld
-									</li>
-									<li class="menu-item">
-										<strong>电话</strong>
-										(+49）15257327911
-									</li>
-									<li class="menu-item">
-										<strong>邮箱</strong>
-										<a href="mailto:info@wxcintl.com">info@wxcintl.com</a>
-									</li>								
-								</ul>
-							</div>
+                        <div class="footer-menu">
+                            <h3 class="lang" key="contact_info">Contact Information</h3>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <strong class="lang" key="address">Address</strong>
+                                    Willy-Brandt-Platz 2, 12529, Schönefeld
+                                </li>
+                                <li class="menu-item">
+                                    <strong class="lang" key="phone">Phone</strong>
+                                    (+49）15257327911
+                                </li>
+                                <li class="menu-item">
+                                    <strong class="lang" key="email">Email</strong>
+                                    <a href="mailto:info@wxcintl.com">info@wxcintl.com</a>
+                                </li>                               
+                            </ul>
+                        </div>
 
-							<div class="footer-item">
-								<h2>如果您有任何疑问 
-								请联系我们</h2>
-								<p>如果您想了解相关信息或与我们合作，请通过电话或邮箱联系我们</p>
-								<div class="btn-wrap">
-									<a href="mailto:info@wxcintl.com" class="btn-accent">联系我们</a>
-								</div>
-							</div>
+                        <div class="footer-item">
+                            <h3 class="lang" key="footer_cta">If You Have Any Questions, Please Contact Us</h2>
+                            <p class="lang" key="footer_text">If you want to learn more information or cooperate with us, please contact us by phone or email.</p>
+                            <div class="btn-wrap">
+                                <a href="mailto:info@wxcintl.com" class="btn-accent lang" key="contact_us">Contact Us</a>
+                            </div>
+                        </div>
 
-						</div>
-					</div>
-			</div>
-		</div>
-	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <div id="footer-bottom">
-	<div class="container">
-		<div class="grid">
+    <div class="container">
+        <div class="grid">
 
-			<div class="social-links">
-				<ul>
-					<li><a href="#"><i class="icon icon-facebook"></i></a></li>
-					<li><a href="#"><i class="icon icon-linkedin"></i></a></li>
-					<li><a href="#"><i class="icon icon-twitter"></i></a></li>
-				</ul>
-			</div><!--social-links-->
+            <div class="social-links">
+                <ul>
+                    <li><a href="#"><i class="icon icon-facebook"></i></a></li>
+                    <li><a href="#"><i class="icon icon-linkedin"></i></a></li>
+                    <li><a href="#"><i class="icon icon-twitter"></i></a></li>
+                </ul>
+            </div><!--social-links-->
 
-			<div class="copyright">
-				<p> 2024 &copy; WxC International GmbH <p>
-				<p> Made with &#9829; 
-					<a href="https://templatesjungle.com" target="_blank">TemplateJungle</a> 
-					<a>&</a> 
-					<a href="https://flaticon.com" target="_blank">FlatIcon</a> 
-				</p>
-				
-			</div>
-		</div>
-	</div>
+            <div class="copyright">
+                <p> 2024 &copy; WxC International GmbH <p>
+                <p> Made with &#9829; 
+                    <a href="https://templatesjungle.com" target="_blank">TemplateJungle</a> 
+                    <a>&</a> 
+                    <a href="https://flaticon.com" target="_blank">FlatIcon</a> 
+                </p>
+                
+            </div>
+        </div>
+    </div>
 </div>
 
-	<script src="js/jquery-1.11.0.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/slideNav.min.js"></script>
-	<script src="js/slideNav.js"></script>
-	<script src="js/script.js"></script>	
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/slideNav.min.js"></script>
+<script src="js/slideNav.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+    // Language Toggle
+    const languageToggleButton = document.getElementById('language-toggle');
+    const elements = document.querySelectorAll('.lang');
+    const langContent = {
+        en: {
+            home: "Home",
+            about: "About Us",
+            services: "Services",
+            advantages: "Advantages",
+            contact_us: "Contact Us",
+            motto: "Our Motto",
+            slogan: "Connecting Germany with the World",
+            values: "Focus | Professionalism | Efficiency",
+            about_us: "About Us",
+            about_us_text: "WxC International GmbH was founded in 2024 as a diversified company integrating international trade, logistics warehousing, and consulting services for overseas enterprises. The company is headquartered in Schönefeld, near Berlin Brandenburg Airport, known for its convenient transportation. Upholding the concept of connecting Germany with the world and a professional, focused attitude, our team of experts provides the best service to every client.",
+            services_intro: "Our Services",
+            event_customization: "Event Customization",
+            international_trade: "International Trade",
+            logistics_warehousing: "Logistics & Warehousing",
+            food_beverage: "Food & Beverage",
+            brand_marketing: "Brand Marketing & Promotion",
+            daily_goods: "Daily Goods & Cosmetics",
+            shipping: "Sea, Rail, Air Shipping",
+            event_planning: "Event Planning",
+            apparel: "Apparel & Accessories",
+            customs: "Customs Clearance",
+            exhibition: "Exhibition Booth Design",
+            furniture: "Furniture & Appliances",
+            warehousing: "Warehousing Services",
+            industrial: "Industrial Machinery & Parts",
+            advantages: "Our Advantages",
+            professional_service: "Professional Services",
+            full_service: "Full Service",
+            tracking_orders1: "Tracking",
+            tracking_orders2: "All",
+            tracking_orders3: "Trade Orders",
+            industry_experience: "Rich Industry Experience",
+            global_trade: "Global Trade",
+            variety_goods1: "Trading",
+            variety_goods2: "Variety",
+            variety_goods3: "Goods",
+            good_reputation: "Good Reputation",
+            partner_approval: "Partner Approval Worldwide",
+            consistent_praise1: "Getting",
+            consistent_praise2: "Consistent",
+            consistent_praise3: "Praise",
+            footer_links: "Footer Links",
+            contact_info: "Contact Information",
+            address: "Address",
+            phone: "Phone",
+            email: "Email",
+            footer_cta: "If You Have Any Questions, Please Contact Us",
+            footer_text: "If you want to learn more information or cooperate with us, please contact us by phone or email."
+        },
+        cn: {
+            home: "主页",
+            about: "关于我们",
+            services: "业务介绍",
+            advantages: "公司优势",
+            contact_us: "联系我们",
+            motto: "我们始终秉承",
+            slogan: "立足德国，沟通世界",
+            values: "专注 | 专业 | 高效",
+            about_us: "关于我们",
+            about_us_text: "德国WxC国际贸易公司创立于2024年，是一家集国际贸易，物流仓储及为海内外企业提供咨询与定制服务为一体的多元化公司。公司总部位于交通便利的舍内费尔德，紧邻柏林勃兰登堡机场。公司始终秉承立足德国，沟通世界的理念，以及专业专注的态度，协同专业，高效，创新的经营团队为每一位客户提供最优质的服务。",
+            services_intro: "业务介绍",
+            event_customization: "企业活动定制",
+            international_trade: "国际贸易",
+            logistics_warehousing: "物流仓储服务",
+            food_beverage: "食品 酒",
+            brand_marketing: "品牌营销与推广",
+            daily_goods: "日用百货 化妆品",
+            shipping: "海运 铁运 空运",
+            event_planning: "活动策划",
+            apparel: "箱包 服饰",
+            customs: "清关服务",
+            exhibition: "展会展台设计",
+            furniture: "家具 家电",
+            warehousing: "仓储服务",
+            industrial: "工业机械 零部件",
+            advantages: "我们的优势",
+            professional_service: "专业的",
+            full_service: "全程服务",
+            tracking_orders1: "实行",
+            tracking_orders2: "所有贸易订单",
+            tracking_orders3: "全方位跟踪",
+            industry_experience: "丰富的",
+            global_trade: "行业经验",
+            variety_goods1: "完成",
+            variety_goods2: "多种类型商品",
+            variety_goods3: "全球贸易",
+            good_reputation: "良好的",
+            partner_approval: "业界口碑",
+            consistent_praise1: "实现",
+            consistent_praise2: "全球合作伙伴",
+            consistent_praise3: "一致好评",
+            footer_links: "板块链接",
+            contact_info: "联系方式",
+            address: "地址",
+            phone: "电话",
+            email: "邮箱",
+            footer_cta: "如果您有任何疑问 请联系我们",
+            footer_text: "如果您想了解相关信息或与我们合作，请通过电话或邮箱联系我们"
+        }
+    };
+
+    languageToggleButton.addEventListener('click', () => {
+        let language = languageToggleButton.textContent === '中文' ? 'cn' : 'en';
+        elements.forEach(element => {
+            let key = element.getAttribute('key');
+            element.textContent = langContent[language][key];
+        });
+
+        languageToggleButton.textContent = language === 'en' ? '中文' : 'English';
+    });
+</script>
 
 </body>
-</html>	
+</html>

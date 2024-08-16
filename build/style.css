@@ -232,6 +232,9 @@ button {
 .btn-wrap {
     margin-top: 70px;
 }
+.btn-switch {
+    border-radius: 300px;
+}
 .btn-wrap a {
     font-weight: 500;
     text-transform: uppercase;
@@ -243,6 +246,7 @@ button {
     background-color: #111;
     color: #fff;
     padding: 20px 30px;
+    border-radius: 30px;
 }
 .btn-pill {
     border-radius: 50px;
@@ -1085,7 +1089,7 @@ nav#navbar {
     margin: 20px auto;
 }
 #price-table .price strong {
-    font-size: 3.2em;
+    font-size: 1.5em;
 }
 #price-table .price {
     display: flex;
