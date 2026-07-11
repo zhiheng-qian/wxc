@@ -16,103 +16,88 @@
     <link rel="stylesheet" type="text/css" href="css/vendor.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="images/icon.png">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <script src="js/modernizr.js"></script>
 </head>
 
 <body>
 
+<!-- NAV -->
 <div id="header-wrap">
     <header id="header">
-        <div class="container">
-            <div class="inner-content">
-                <div class="grid">
-                    <div class="main-logo">
-                        <a href="index.html"><img src="images/logo.png" width="300" height="100" alt="logo"></a>
-                    </div>
-
-                    <nav id="navbar">
-                        <div class="main-menu">
-                            <ul class="menu-list">
-                                <li class="menu-item"><a href="#about" class="nav-link lang" data-effect="About" key="about">About Us</a></li>
-                                <li class="menu-item"><a href="#services" class="nav-link lang" data-effect="Services" key="services">Services</a></li>
-                                <li class="menu-item"><a href="#price-table" class="nav-link lang" data-effect="Price table" key="advantages_h">Why Us</a></li>
-                                <li class="menu-item"><a href="#footer" class="nav-link lang" data-effect="Contact" key="contact_info">Contact</a></li>
-                            </ul>
-
-                            <div class="hamburger">
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                            </div>
-                        </div>
-
-                        <!-- <div class="btn-switch">
-                            <a id="language-toggle" class="btn-accent">中文</a>
-                        </div> -->
-                        <div class="btn-switch">
-                            <a id="language-en" class="btn-accent" href="#">EN</a> |
-                            <a id="language-de" class="btn-accent" href="#">DE</a> |
-                            <a id="language-cn" class="btn-accent" href="#">中文</a>
-                        </div>
-
-
-                        <a href="mailto:info@wxcintl.com" class="btn-hvr-effect">
-                            <span class="lang" key="contact_us">Email Us</span>
-                            <i class="icon icon-long-arrow-right"></i>
-                        </a>
-
-                    </nav>
-                </div>
+        <div class="wxc-nav-inner">
+            <div class="main-logo">
+                <a href="index.html"><img src="images/logo.png" height="46" alt="WxC International GmbH"></a>
             </div>
+
+            <nav id="navbar">
+                <div class="main-menu">
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="#about" class="nav-link lang" key="about">About Us</a></li>
+                        <li class="menu-item"><a href="#services" class="nav-link lang" key="services">Services</a></li>
+                        <li class="menu-item"><a href="#price-table" class="nav-link lang" key="advantages_h">Why Us</a></li>
+                        <li class="menu-item"><a href="#footer" class="nav-link lang" key="contact_info">Contact</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+
+                <div class="wxc-nav-right">
+                    <div class="btn-switch">
+                        <a id="language-en" class="btn-accent" href="#" onclick="setLanguage('en');return false;">EN</a> |
+                        <a id="language-de" class="btn-accent" href="#" onclick="setLanguage('de');return false;">DE</a> |
+                        <a id="language-cn" class="btn-accent" href="#" onclick="setLanguage('cn');return false;">中文</a>
+                    </div>
+                    <a href="mailto:info@wxcintl.com" class="btn-hvr-effect">
+                        <span class="lang" key="contact_us">Email Us</span>
+                    </a>
+                </div>
+            </nav>
         </div>
-    </header>     
+    </header>
 </div>
 
+<!-- HERO -->
 <section id="billboard">
-    <div class="main-banner pattern-overlay">
-        <div class="banner-content" data-aos="fade-up">
-            <h2 class="section-subtitle lang" key="motto">Our Mission</h2>
-            <h3 class="banner-title lang" key="slogan">Based in Germany, connecting the world</h3>
-            <h3 class="lang" key="values">Dedicated | Professional | Efficient</h3>
-            <div class="btn-wrap">
-                <a href="mailto:info@wxcintl.com" class="btn-accent lang" key="contact_us">Contact Us</a>
+    <div class="wxc-hero">
+        <div class="wxc-hero-inner">
+            <div class="wxc-hero-content" data-aos="fade-up">
+                <div class="wxc-hero-tag lang" key="motto">Our Mission</div>
+                <h1 class="wxc-hero-title lang" key="slogan">Based in Germany,<br>connecting the world</h1>
+                <p class="wxc-hero-values lang" key="values">Dedicated · Professional · Efficient</p>
+                <p class="wxc-hero-body lang" key="hero_body">WxC International GmbH is a Berlin-based company specialising in international trade, logistics and consulting — building reliable bridges between European and Chinese markets.</p>
+                <a href="mailto:info@wxcintl.com" class="wxc-btn-primary lang" key="contact_us">Get in Touch</a>
+            </div>
+            <div class="wxc-hero-image">
+                <img src="images/main-banner.png" alt="WxC International">
             </div>
         </div>
-        <figure>
-            <img src="images/main-banner.png" alt="banner" class="banner-image">
-        </figure> 
     </div>
 </section>
 
 <button id="scrollToTopBtn">Top</button>
 
+<!-- ABOUT -->
 <section id="about">
-    <div class="container">
-        <div class="row">
-            <div class="inner-content">
-                <div class="company-detail">
-                    <div class="grid">
-                        <figure>
-                            <img src="images/single-image.png" alt="book" class="single-image">
-                        </figure>
-                        <div class="detail-entry" data-aos="fade-up">
-
-                            <div class="section-header">
-                                <h2 class="section-subtitle liner lang" key="about_us">About Us</h2>
-								<h3 class="section-title lang" key="about_us2">To provide permium service to every customer</h3>
-                            </div>
-
-                            <div class="detail-wrap">
-                                <p class="lang" key="about_us_text">WxC International GmbH was established in 2024. It is a diversified company that combines international trade, logistics and warehousing, and also offers consulting and customized services for businesses. The company's headquarters is located in Berlin, Germany.</p>
-                                <p class="lang" key="about_us_text2">The company's mission is to be based in Germany while connecting with the world. We are committed to providing the highest quality service to every customer with a focused approach, and a professional, efficient, and innovative management team.</p>
-
-                            </div>
-                        </div>
+    <div class="wxc-about">
+        <div class="wxc-container">
+            <div class="wxc-about-inner" data-aos="fade-up">
+                <div class="wxc-about-image">
+                    <img src="images/single-image.png" alt="About WxC International">
+                </div>
+                <div class="wxc-about-content">
+                    <div class="wxc-section-label lang" key="about_us">About Us</div>
+                    <h2 class="wxc-section-title lang" key="about_us2">To provide premium service to every customer</h2>
+                    <div class="wxc-section-body">
+                        <p class="lang" key="about_us_text">WxC International GmbH was established in 2024. It is a diversified company that combines international trade, logistics and warehousing, and also offers consulting and customized services for businesses. The company's headquarters is located in Berlin, Germany.</p>
+                        <p class="lang" key="about_us_text2">We pursue the mission "Based in Germany, connecting the world" and combine a professional approach with a strong focus on customer satisfaction. With an experienced, efficient, and innovative management team, we develop tailored and high-quality solutions for every customer.</p>
                     </div>
                 </div>
             </div>
@@ -120,226 +105,196 @@
     </div>
 </section>
 
+<!-- SERVICES -->
 <section id="services">
-    <div class="container">
-        <div class="row">
-            <div class="inner-content">
-                <div class="service-content">
-                    <div class="grid">
-                        <div class="detail-entry">
+    <div class="wxc-services">
+        <div class="wxc-container">
+            <div class="wxc-services-top">
+                <div class="wxc-section-label lang" key="services_intro">Our Services</div>
+                <h2 class="wxc-section-title lang" key="what_we_do">What we do</h2>
+            </div>
+            <div class="wxc-services-columns" data-aos="fade-up">
 
-                            <div class="section-header">
-                                <h2 class="section-subtitle liner lang" key="services_intro">Our Services</h2>
-                                <h3 class="section-title lang" key="event_customization">Event Planning</h3>
-                                <h3 class="section-title lang" key="international_trade">International Trade</h3>
-                                <h3 class="section-title lang" key="logistics_warehousing">Logistics|Warehousing</h3>
-                            </div>
-                        
+                <!-- International Trade -->
+                <div class="wxc-service-col">
+                    <div class="wxc-service-col-header">
+                        <div class="wxc-service-col-num lang" key="col_trade">International Trade</div>
+                        <div class="wxc-service-col-title lang" key="col_trade_sub">Sourcing &amp; trading goods between Europe and China</div>
+                    </div>
+                    <div class="wxc-service-list">
+                        <div class="wxc-service-list-item">
+                            <img src="images/icons/products.png" alt="">
+                            <span class="lang" key="food_beverage">Food &amp; Beverage</span>
                         </div>
-
-                        <div class="service-grid grid" data-aos="fade-up">
-
-                            <div class="column single-column">
-                                <div class="icon-box">
-                                    <img src="images/icons/products.png" alt="branding">
-                                    <div class="title lang" key="food_beverage">Food & Beverage</div>
-                                </div>
-                            </div>
-
-                            <div class="column odd-column">
-                                <div class="icon-box">
-                                    <img src="images/icons/analysis.png" alt="branding">
-                                    <div class="title lang" key="brand_marketing">Brand Marketing & Promotion</div>
-                                </div>
-                                <div class="icon-box">
-                                    <img src="images/icons/skincare.png" alt="animation">
-                                    <div class="title lang" key="daily_goods">Daily Goods & Cosmetics</div>
-                                </div>
-                                <div class="icon-box">
-                                    <img src="images/icons/express-delivery.png" alt="animation">
-                                    <div class="title lang" key="shipping">Sea, Rail, Air Freight</div>
-                                </div>
-                            </div>
-
-                            <div class="column">
-                                <div class="icon-box">
-                                    <img src="images/icons/analyst.png" alt="branding">
-                                    <div class="title lang" key="event_planning">Event Planning</div>
-                                </div>
-                                <div class="icon-box">
-                                    <img src="images/icons/dress.png" alt="animation">
-                                    <div class="title lang" key="apparel">Apparel & Accessories</div>
-                                </div>
-                                <div class="icon-box">
-                                    <img src="images/icons/customs-inspection.png" alt="animation">
-                                    <div class="title lang" key="customs">Customs Clearance</div>
-                                </div>
-                            </div>
-
-                            <div class="column odd-column">
-                                <div class="icon-box">
-                                    <img src="images/icons/cubes.png" alt="branding">
-                                    <div class="title lang" key="exhibition">Exhibition Booth Design</div>
-                                </div>
-                                <div class="icon-box">
-                                    <img src="images/icons/couch.png" alt="animation">
-                                    <div class="title lang" key="furniture">Furniture & Appliances</div>
-                                </div>
-                                <div class="icon-box">
-                                    <img src="images/icons/warehouse.png" alt="animation">
-                                    <div class="title lang" key="warehousing">Warehousing Services</div>
-                                </div>
-                            </div>
-
-                            <div class="column single-column">
-                                <div class="icon-box">
-                                    <img src="images/icons/factory-machine.png" alt="branding">
-                                    <div class="title lang" key="industrial">Industrial Machinery & Parts</div>
-                                </div>
-                            </div>
+                        <div class="wxc-service-list-item">
+                            <img src="images/icons/skincare.png" alt="">
+                            <span class="lang" key="daily_goods">Daily Goods &amp; Cosmetics</span>
+                        </div>
+                        <div class="wxc-service-list-item">
+                            <img src="images/icons/dress.png" alt="">
+                            <span class="lang" key="apparel">Apparel &amp; Accessories</span>
+                        </div>
+                        <div class="wxc-service-list-item">
+                            <img src="images/icons/couch.png" alt="">
+                            <span class="lang" key="furniture">Furniture &amp; Appliances</span>
+                        </div>
+                        <div class="wxc-service-list-item">
+                            <img src="images/icons/factory-machine.png" alt="">
+                            <span class="lang" key="industrial">Industrial Machinery &amp; Parts</span>
                         </div>
                     </div>
                 </div>
+
+                <!-- Logistics & Warehousing -->
+                <div class="wxc-service-col">
+                    <div class="wxc-service-col-header">
+                        <div class="wxc-service-col-num lang" key="col_logistics">Logistics &amp; Warehousing</div>
+                        <div class="wxc-service-col-title lang" key="col_logistics_sub">End-to-end freight, customs &amp; storage solutions</div>
+                    </div>
+                    <div class="wxc-service-list">
+                        <div class="wxc-service-list-item">
+                            <img src="images/icons/express-delivery.png" alt="">
+                            <span class="lang" key="shipping">Sea, Rail &amp; Air Freight</span>
+                        </div>
+                        <div class="wxc-service-list-item">
+                            <img src="images/icons/customs-inspection.png" alt="">
+                            <span class="lang" key="customs">Customs Clearance</span>
+                        </div>
+                        <div class="wxc-service-list-item">
+                            <img src="images/icons/warehouse.png" alt="">
+                            <span class="lang" key="warehousing">Warehousing Services</span>
+                        </div>
+                        <div class="wxc-service-list-item">
+                            <img src="images/icons/best-customer-experience.png" alt="">
+                            <span class="lang" key="cargo_insurance">Cargo Insurance</span>
+                        </div>
+                        <div class="wxc-service-list-item">
+                            <img src="images/icons/idea-exchange.png" alt="">
+                            <span class="lang" key="supply_chain">Supply Chain Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Planning & Marketing -->
+                <div class="wxc-service-col">
+                    <div class="wxc-service-col-header">
+                        <div class="wxc-service-col-num lang" key="col_event">Event Planning &amp; Marketing</div>
+                        <div class="wxc-service-col-title lang" key="col_event_sub">Brand presence &amp; events in European markets</div>
+                    </div>
+                    <div class="wxc-service-list">
+                        <div class="wxc-service-list-item">
+                            <img src="images/icons/analyst.png" alt="">
+                            <span class="lang" key="event_planning">Event Planning</span>
+                        </div>
+                        <div class="wxc-service-list-item">
+                            <img src="images/icons/analysis.png" alt="">
+                            <span class="lang" key="brand_marketing">Brand Marketing &amp; Promotion</span>
+                        </div>
+                        <div class="wxc-service-list-item">
+                            <img src="images/icons/cubes.png" alt="">
+                            <span class="lang" key="exhibition">Exhibition Booth Design</span>
+                        </div>
+                        <div class="wxc-service-list-item">
+                            <img src="images/icons/customer-service.png" alt="">
+                            <span class="lang" key="trade_fair_rep">Trade Fair Representation</span>
+                        </div>
+                        <div class="wxc-service-list-item">
+                            <img src="images/icons/hairdryer.png" alt="">
+                            <span class="lang" key="market_research">Market Research</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 </section>
 
+<!-- WHY US -->
 <section id="price-table">
-    <div class="container">
-        <div class="row">
-            <div class="inner-content">
-
-                <div class="section-header align-center">
-                    <h1 class="section-subtitle lang" key="advantages">We Offer</h1>
+    <div class="wxc-why">
+        <div class="wxc-container">
+            <div class="wxc-why-header" data-aos="fade-up">
+                <div class="wxc-section-label lang" key="why_choose_us">Why Choose Us</div>
+                <h2 class="wxc-section-title lang" key="what_sets_us_apart">What sets us apart</h2>
+            </div>
+            <div class="wxc-why-grid" data-aos="fade-up">
+                <div class="wxc-why-card">
+                    <div class="wxc-why-icon">
+                        <img src="images/icons/customer-service.png" alt="">
+                    </div>
+                    <div class="wxc-why-card-title lang" key="professional_service">Professional Service</div>
+                    <div class="wxc-why-card-sub lang" key="full_service">End-to-end</div>
+                    <div class="wxc-why-card-desc lang" key="professional_service_desc">Full tracking of all trade orders, from initial inquiry through to delivery.</div>
                 </div>
-
-                <div class="grid">
-
-                    <div class="column align-center">
-                        <i class="icon">
-                            <img src="images/icons/customer-service.png" width="80" alt="branding">
-                        </i>
-                        <div class="price">
-                            <h3 class="lang" key="professional_service">Professional Service</h3>
-                        </div>
-                        <div class="price">
-                            <strong class="lang" key="full_service">Full Service</strong>
-                        </div>
-                        <ul>
-                            <li class="lang" key="tracking_orders1">Tracking </li>
-                            <li class="lang" key="tracking_orders2">All </li>
-                            <li class="lang" key="tracking_orders3">Trade Orders </li>
-                        </ul>                       
+                <div class="wxc-why-card">
+                    <div class="wxc-why-icon">
+                        <img src="images/icons/idea-exchange.png" alt="">
                     </div>
-
-                    <div class="column align-center">
-                        <i class="icon">
-                            <img src="images/icons/idea-exchange.png" width="80" alt="branding">
-                        </i>
-                        <div class="price">
-                            <h3 class="lang" key="industry_experience">Rich Industry Experience</h3>
-                        </div>
-                        <div class="price">
-                            <strong class="lang" key="global_trade">Global Trade</strong>
-                        </div>
-                        <ul>
-                            <li class="lang" key="variety_goods1">Trading </li>
-                            <li class="lang" key="variety_goods2">Variety </li>
-                            <li class="lang" key="variety_goods3">Goods </li>
-                        </ul>                      
+                    <div class="wxc-why-card-title lang" key="industry_experience">Rich Industry Experience</div>
+                    <div class="wxc-why-card-sub lang" key="global_trade">Worldwide Trade</div>
+                    <div class="wxc-why-card-desc lang" key="industry_experience_desc">Trading a wide variety of goods globally, backed by deep cross-border expertise.</div>
+                </div>
+                <div class="wxc-why-card">
+                    <div class="wxc-why-icon">
+                        <img src="images/icons/best-customer-experience.png" alt="">
                     </div>
-
-                    <div class="column align-center">
-                        <i class="icon">
-                            <img src="images/icons/best-customer-experience.png" width="80" alt="branding">
-                        </i>
-                        <div class="price">
-                            <h3 class="lang" key="good_reputation">Excellent Reputation</h3>
-                        </div>
-                        <div class="price">
-                            <strong class="lang" key="partner_approval">Worldwide Client</strong>
-                        </div>
-                        <ul>
-                            <li class="lang" key="consistent_praise1">Getting </li>
-                            <li class="lang" key="consistent_praise2">Consistent </li>
-                            <li class="lang" key="consistent_praise3">Praise </li>
-                        </ul>                        
-                    </div>
+                    <div class="wxc-why-card-title lang" key="good_reputation">Excellent Reputation</div>
+                    <div class="wxc-why-card-sub lang" key="partner_approval">Global Recognition</div>
+                    <div class="wxc-why-card-desc lang" key="good_reputation_desc">Consistent praise from partners and clients across Europe and Asia.</div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- FOOTER -->
 <footer id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="inner-content">
-                <div class="footer-menu-list" data-aos="fade-up">
-                    <div class="grid">
-
-                        <div class="footer-menu">
-                            <h3 class="lang" key="contact_info">Contact</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <strong class="lang" key="address">Address</strong>
-                                    Palisadenstraße 44, 10243 Berlin, Germany
-                                </li>
-                                <li class="menu-item">
-                                    <strong class="lang" key="phone">Phone/WhatsApp</strong>
-                                    (+49）015252368011
-                                </li>
-                                <li class="menu-item">
-                                    <strong class="lang" key="email">Email</strong>
-                                    <a href="mailto:info@wxcintl.com">info@wxcintl.com</a>
-                                </li>                               
-                            </ul>
-                        </div>
-
-                        <div class="footer-menu">
-                            <h3 class="lang" key="follow_us">Follow Us</h3>
-                            <ul class="menu-list social-links">
-                                <li class="menu-item">
-                                    <a href="https://www.instagram.com/wxcintl.gmbh?igsh=MTMxb2RyZGQzbDUyNQ%3D%3D&utm_source=qr" target="_blank">
-                                        <img src="images/icons/instagram.png" alt="Instagram" class="social-icon">
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="https://wa.me/4915252368011" target="_blank">
-                                        <img src="images/icons/whatsapp.png" alt="WhatsApp" class="social-icon">
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="https://www.xiaohongshu.com/user/profile/6324c434000000002303c9f5?xsec_token=YBotYXfdCEsHLBv1rZEU-f1iabu55KG1d89FOgcdrx9qw=&xsec_source=app_share&xhsshare=CopyLink&appuid=6324c434000000002303c9f5&apptime=1736456794&share_id=7e4f7a5349fb452faef47a1347870af8" target="_blank">
-                                        <img src="images/icons/xiaohongshu.png" alt="Little Red Book" class="social-icon">
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#footer" id="wechat-icon">
-                                        <img src="images/icons/wechat.png" alt="WeChat" class="social-icon">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-
-
-
-                        <div class="footer-item">
-                            <h3 class="lang" key="footer_cta">If You Have Any Questions, Please Contact Us</h2>
-                            <div class="btn-wrap">
-                                <a href="mailto:info@wxcintl.com" class="btn-accent lang" key="contact_us">Contact Us</a>
-                            </div>
-                        </div>
-
+    <div class="wxc-footer">
+        <div class="wxc-container">
+            <div class="wxc-footer-main">
+                <div class="wxc-footer-inner">
+                    <div class="wxc-footer-col">
+                        <div class="wxc-footer-col-label lang" key="contact_info">Contact</div>
+                        <p>Palisadenstraße 44<br>10243 Berlin, Germany</p>
+                        <a href="tel:+4915252368011">+49 152 52 36 80 11</a>
+                        <a href="mailto:info@wxcintl.com">info@wxcintl.com</a>
                     </div>
+                    <div class="wxc-footer-col">
+                        <div class="wxc-footer-col-label lang" key="follow_us">Follow Us</div>
+                        <div class="wxc-footer-social">
+                            <a href="https://www.instagram.com/wxcintl.gmbh?igsh=MTMxb2RyZGQzbDUyNQ%3D%3D&utm_source=qr" target="_blank">
+                                <img src="images/icons/instagram.png" alt="Instagram">
+                            </a>
+                            <a href="https://wa.me/4915252368011" target="_blank">
+                                <img src="images/icons/whatsapp.png" alt="WhatsApp">
+                            </a>
+                            <a href="https://www.xiaohongshu.com/user/profile/6324c434000000002303c9f5?xsec_token=YBotYXfdCEsHLBv1rZEU-f1iabu55KG1d89FOgcdrx9qw=&xsec_source=app_share&xhsshare=CopyLink&appuid=6324c434000000002303c9f5&apptime=1736456794&share_id=7e4f7a5349fb452faef47a1347870af8" target="_blank">
+                                <img src="images/icons/xiaohongshu.png" alt="小红书">
+                            </a>
+                            <a href="#footer" id="wechat-icon">
+                                <img src="images/icons/wechat.png" alt="WeChat">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="wxc-footer-cta">
+                        <div class="wxc-footer-cta-title lang" key="footer_cta_title">Have a question?<br>We'd love to hear from you.</div>
+                        <a href="mailto:info@wxcintl.com" class="wxc-btn-footer lang" key="contact_us">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="wxc-footer-bottom">
+                <p>2026 &copy; WxC International GmbH</p>
+                <div class="wxc-footer-legal">
+                    <a href="datenschutz.html">Datenschutz</a>
+                    <a href="impressum.html">Impressum</a>
                 </div>
             </div>
         </div>
     </div>
 </footer>
 
+<!-- WeChat QR Modal -->
 <div id="wechat-qr-modal" class="qr-modal">
     <div class="qr-modal-content">
         <button class="close-btn" id="close-modal">&times;</button>
@@ -347,29 +302,6 @@
         <div class="qr-codes">
             <img src="images/wechat2.jpeg" alt="WeChat QR Code 2" class="qr-code">
             <img src="images/wechat1.JPG" alt="WeChat QR Code 1" class="qr-code">
-        </div>
-    </div>
-</div>
-
-<div id="footer-bottom">
-    <div class="container">
-        <div class="grid">
-            <div class="privacy">
-                <ul>
-                    <li><a href="datenschutz.html" target="_self">Datenschutz</a></li>
-                    <li><a href="impressum.html" target="_self">Impressum</a></li>
-                </ul>
-            </div>
-
-            <div class="copyright">
-                <p> 2026 &copy; WxC International GmbH <p>
-                <p> Made with &#9829; 
-                    <a href="https://templatesjungle.com" target="_blank">TemplateJungle</a> 
-                    <a>&</a> 
-                    <a href="https://flaticon.com" target="_blank">FlatIcon</a> 
-                </p>
-                
-            </div>
         </div>
     </div>
 </div>
@@ -393,49 +325,52 @@
             home: "Home",
             about: "About Us",
             services: "Services",
-            advantages_h: "Advantages",
+            advantages_h: "Why Us",
             contact_info: "Contact",
             contact_us: "Email Us",
             motto: "Our Mission",
             slogan: "Based in Germany, connecting the world",
-            values: "Dedicated | Professional | Efficient",
+            values: "Dedicated · Professional · Efficient",
+            hero_body: "WxC International GmbH is a Berlin-based company specialising in international trade, logistics and consulting — building reliable bridges between European and Chinese markets.",
             about_us: "About Us",
             about_us2: "To provide premium service to every customer",
-            about_us_text: "WxC International GmbH was established in 2024. It is a diversified company that combines international trade, logistics, and warehousing, and also offers consulting and customized services for businesses. The company's headquarters is located in Berlin, Germany.",
-            about_us_text2: "We pursue the mission \"Based in Germany, connecting the world\" and combines a professional approach with a strong focus on customer satisfaction. With an experienced, efficient, and innovative management team, we develop tailored and high-quality solutions for every customer.",
+            about_us_text: "WxC International GmbH was established in 2024. It is a diversified company that combines international trade, logistics and warehousing, and also offers consulting and customized services for businesses. The company's headquarters is located in Berlin, Germany.",
+            about_us_text2: "We pursue the mission \"Based in Germany, connecting the world\" and combine a professional approach with a strong focus on customer satisfaction. With an experienced, efficient, and innovative management team, we develop tailored and high-quality solutions for every customer.",
             services_intro: "Our Services",
-            event_customization: "Event Planning",
-            international_trade: "International Trade",
-            logistics_warehousing: "Logistics | Warehousing",
-            food_beverage: "Food Beverage",
-            brand_marketing: "Brand Marketing Promotion",
-            daily_goods: "Daily Goods Cosmetics",
-            shipping: "Sea, Rail, Air Freight",
+            what_we_do: "What we do",
+            col_trade: "International Trade",
+            col_trade_sub: "Sourcing & trading goods between Europe and China",
+            col_logistics: "Logistics & Warehousing",
+            col_logistics_sub: "End-to-end freight, customs & storage solutions",
+            col_event: "Event Planning & Marketing",
+            col_event_sub: "Brand presence & events in European markets",
+            food_beverage: "Food & Beverage",
+            brand_marketing: "Brand Marketing & Promotion",
+            daily_goods: "Daily Goods & Cosmetics",
+            shipping: "Sea, Rail & Air Freight",
             event_planning: "Event Planning",
-            apparel: "Apparel Accessories",
+            apparel: "Apparel & Accessories",
             customs: "Customs Clearance",
             exhibition: "Exhibition Booth Design",
-            furniture: "Furniture Appliances",
+            furniture: "Furniture & Appliances",
             warehousing: "Warehousing Services",
-            industrial: "Industrial Machinery Parts",
-            advantages: "We offer",
-            professional_service: "Professional Services",
-            full_service: "End-to-end Service",
-            tracking_orders1: "Tracking",
-            tracking_orders2: "All",
-            tracking_orders3: "Trade Orders",
+            industrial: "Industrial Machinery & Parts",
+            cargo_insurance: "Cargo Insurance",
+            supply_chain: "Supply Chain Management",
+            trade_fair_rep: "Trade Fair Representation",
+            market_research: "Market Research",
+            why_choose_us: "Why Choose Us",
+            what_sets_us_apart: "What sets us apart",
+            professional_service: "Professional Service",
+            full_service: "End-to-end",
+            professional_service_desc: "Full tracking of all trade orders, from initial inquiry through to delivery.",
             industry_experience: "Rich Industry Experience",
             global_trade: "Worldwide Trade",
-            variety_goods1: "Trading",
-            variety_goods2: "Variety",
-            variety_goods3: "Goods",
+            industry_experience_desc: "Trading a wide variety of goods globally, backed by deep cross-border expertise.",
             good_reputation: "Excellent Reputation",
             partner_approval: "Global Recognition",
-            consistent_praise1: "Getting",
-            consistent_praise2: "Consistent",
-            consistent_praise3: "Praise",
-            footer_cta: "If You Have Any Questions, Please Contact Us",
-            footer_links: "Links",
+            good_reputation_desc: "Consistent praise from partners and clients across Europe and Asia.",
+            footer_cta_title: "Have a question? We'd love to hear from you.",
             address: "Address",
             phone: "Phone/WhatsApp",
             email: "Email",
@@ -445,49 +380,52 @@
             home: "主页",
             about: "关于我们",
             services: "服务",
-            advantages_h: "优势",
+            advantages_h: "我们的优势",
             contact_info: "联系方式",
             contact_us: "发送邮件",
             motto: "我们的理念",
             slogan: "立足德国，连接世界",
-            values: "专注 | 专业 | 高效",
+            values: "专注 · 专业 · 高效",
+            hero_body: "德国WxC国际贸易有限公司是一家总部位于柏林的公司，专注于国际贸易、物流与咨询服务，在欧洲与中国市场之间搭建可靠的桥梁。",
             about_us: "关于我们",
             about_us2: "为每一位客户提供卓越的服务",
             about_us_text: "德国WxC国际贸易公司创立于2024年，是一家集国际贸易，物流仓储及为海内外企业提供咨询与定制服务为一体的多元化公司。公司总部位于德国柏林。",
-            about_us_text2: "我们始终秉承“立足德国，沟通世界”的理念，将专业态度与以客户满意为核心的宗旨相结合。协同高效、创新且经验丰富的管理团队，为每一位客户提供量身定制的优质解决方案。",
+            about_us_text2: "我们始终秉承『立足德国，沟通世界』的理念，将专业态度与以客户满意为核心的宗旨相结合。协同高效、创新且经验丰富的管理团队，为每一位客户提供量身定制的优质解决方案。",
             services_intro: "我们的服务",
-            event_customization: "企业活动定制",
-            international_trade: "国际贸易",
-            logistics_warehousing: "物流 | 仓储",
-            food_beverage: "食品 酒",
+            what_we_do: "业务范围",
+            col_trade: "国际贸易",
+            col_trade_sub: "欧中之间的商品采购与贸易",
+            col_logistics: "物流与仓储",
+            col_logistics_sub: "一站式货运、清关与仓储服务",
+            col_event: "活动策划与市场营销",
+            col_event_sub: "品牌在欧洲市场的形象塑造与活动策划",
+            food_beverage: "食品与饮品",
             brand_marketing: "品牌营销与推广",
-            daily_goods: "日用百货 化妆品",
-            shipping: "海运 铁运 空运",
+            daily_goods: "日用百货与化妆品",
+            shipping: "海运、铁路与空运",
             event_planning: "活动策划",
-            apparel: "服饰 配件",
+            apparel: "服饰与配件",
             customs: "清关服务",
             exhibition: "展会展台设计",
-            furniture: "家具 家电",
+            furniture: "家具与家电",
             warehousing: "仓储服务",
             industrial: "工业机械与零部件",
-            advantages: "我们的优势",
-            professional_service: "专业的",
+            cargo_insurance: "货运保险",
+            supply_chain: "供应链管理",
+            trade_fair_rep: "贸易展代理",
+            market_research: "市场调研",
+            why_choose_us: "为何选择我们",
+            what_sets_us_apart: "我们的差异化优势",
+            professional_service: "专业服务",
             full_service: "全程服务",
-            tracking_orders1: "实行",
-            tracking_orders2: "所有贸易订单",
-            tracking_orders3: "全方位跟踪",
-            industry_experience: "丰富的",
-            global_trade: "行业经验",
-            variety_goods1: "完成",
-            variety_goods2: "多种类型商品",
-            variety_goods3: "全球贸易",
-            good_reputation: "良好的",
-            partner_approval: "业界口碑",
-            consistent_praise1: "实现",
-            consistent_praise2: "全球合作伙伴",
-            consistent_praise3: "一致好评",
-            footer_cta: "如果您有任何问题，请联系我们",
-            footer_links: "板块链接",
+            professional_service_desc: "对所有贸易订单进行全流程跟踪，从初步咨询到最终交货。",
+            industry_experience: "丰富的行业经验",
+            global_trade: "全球贸易",
+            industry_experience_desc: "在全球范围内进行多种类型商品的贸易，依托深厚的跨境专业知识。",
+            good_reputation: "良好的业界口碑",
+            partner_approval: "全球认可",
+            good_reputation_desc: "获得欧洲和亚洲合作伙伴及客户的一致好评。",
+            footer_cta_title: "如有任何问题，欢迎随时联系我们。",
             address: "地址",
             phone: "电话/WhatsApp",
             email: "邮箱",
@@ -502,44 +440,47 @@
             contact_us: "E-Mail senden",
             motto: "Unsere Mission",
             slogan: "In Deutschland verwurzelt – Die Welt verbinden",
-            values: "Engagiert | Professionell | Effizient",
+            values: "Engagiert · Professionell · Effizient",
+            hero_body: "WxC International GmbH ist ein in Berlin ansässiges Unternehmen, das sich auf internationalen Handel, Logistik und Beratung spezialisiert hat — und zuverlässige Brücken zwischen europäischen und chinesischen Märkten baut.",
             about_us: "Über uns",
             about_us2: "Um jedem Kunden einen erstklassigen Service zu bieten",
             about_us_text: "WxC International GmbH wurde im Jahr 2024 gegründet und ist ein diversifiziertes Unternehmen, spezialisiert auf internationalen Handel, Logistik und Lagerhaltung sowie Beratungs- und maßgeschneiderte Dienstleistungen für Unternehmen weltweit. Der Hauptsitz befindet sich in Berlin, Deutschland.",
-            about_us_text2: "Wir verpflichten uns der Mission „In Deutschland ansässig, die Welt verbinden“ und kombinieren eine professionelle Haltung mit einem konsequenten Fokus auf Kundenzufriedenheit. In enger Zusammenarbeit mit einem effizienten, innovativen und erfahrenen Managementteam bieten wir jedem Kunden individuelle und erstklassige Lösungen.",
+            about_us_text2: "Wir verpflichten uns der Mission 'In Deutschland ansässig, die Welt verbinden' und kombinieren eine professionelle Haltung mit einem konsequenten Fokus auf Kundenzufriedenheit. In enger Zusammenarbeit mit einem effizienten, innovativen und erfahrenen Managementteam bieten wir jedem Kunden individuelle und erstklassige Lösungen.",
             services_intro: "Unsere Dienstleistungen",
-            event_customization: "Eventplanung",
-            international_trade: "Internationaler Handel",
-            logistics_warehousing: "Logistik | Lagerhaltung",
-            food_beverage: "Lebensmittel Getränke",
-            brand_marketing: "Markenmarketing Markenförderung",
-            daily_goods: "Alltagswaren Kosmetik",
+            what_we_do: "Was wir tun",
+            col_trade: "Internationaler Handel",
+            col_trade_sub: "Beschaffung und Handel zwischen Europa und China",
+            col_logistics: "Logistik & Lagerung",
+            col_logistics_sub: "Ganzheitliche Fracht-, Zoll- und Lagerlösungen",
+            col_event: "Eventplanung & Marketing",
+            col_event_sub: "Markenpräsenz & Veranstaltungen auf europäischen Märkten",
+            food_beverage: "Lebensmittel & Getränke",
+            brand_marketing: "Markenmarketing & -förderung",
+            daily_goods: "Alltagswaren & Kosmetik",
             shipping: "See-, Schienen- und Luftfracht",
             event_planning: "Eventplanung",
-            apparel: "Bekleidung Accessoires",
+            apparel: "Bekleidung & Accessoires",
             customs: "Zollabfertigung",
             exhibition: "Messestanddesign",
-            furniture: "Möbel Haushaltsgeräte",
+            furniture: "Möbel & Haushaltsgeräte",
             warehousing: "Lagerhaltung",
-            industrial: "Industriemaschinen Industrieteile",
-            advantages: "Wir bieten an",
+            industrial: "Industriemaschinen & -teile",
+            cargo_insurance: "Frachtversicherung",
+            supply_chain: "Lieferkettenmanagement",
+            trade_fair_rep: "Messevertretung",
+            market_research: "Marktforschung",
+            why_choose_us: "Warum wir",
+            what_sets_us_apart: "Was uns auszeichnet",
             professional_service: "Professionelle Dienstleistungen",
             full_service: "Vollständiger Service",
-            tracking_orders1: "Verfolgung",
-            tracking_orders2: "aller",
-            tracking_orders3: "Handelsaufträge",
+            professional_service_desc: "Vollständige Verfolgung aller Handelsaufträge, von der ersten Anfrage bis zur Lieferung.",
             industry_experience: "Umfassende Branchenerfahrung",
             global_trade: "Internationaler Handel",
-            variety_goods1: "Handel",
-            variety_goods2: "mit",
-            variety_goods3: "Sortengütern",
+            industry_experience_desc: "Weltweiter Handel mit einer Vielzahl von Waren, gestützt auf umfassende Erfahrung im grenzüberschreitenden Geschäft.",
             good_reputation: "Ausgezeichneter Ruf",
-            partner_approval: "Weltweite Partneranerkennung",
-            consistent_praise1: "Konsequentes",
-            consistent_praise2: "Lob",
-            consistent_praise3: "erhalten",
-            footer_cta: "Wenn Sie Fragen haben, kontaktieren Sie uns bitte",
-            footer_links: "Links",
+            partner_approval: "Weltweite Anerkennung",
+            good_reputation_desc: "Konsequentes Lob von Partnern und Kunden in Europa und Asien.",
+            footer_cta_title: "Haben Sie eine Frage? Wir freuen uns von Ihnen zu hören.",
             address: "Adresse",
             phone: "Telefon/WhatsApp",
             email: "E-Mail",
@@ -547,8 +488,7 @@
         },
     };
 
-
-    function setLanguage(lang) {
+    window.setLanguage = function setLanguage(lang) {
         elements.forEach((element) => {
             const key = element.getAttribute('key');
             if (langContent[lang] && langContent[lang][key]) {
@@ -557,51 +497,28 @@
         });
     }
 
-    // Event Listeners for Language Toggle
-    languageLinks.de.addEventListener('click', (e) => {
-        e.preventDefault();
-        setLanguage('de');
-    });
 
-    languageLinks.en.addEventListener('click', (e) => {
-        e.preventDefault();
-        setLanguage('en');
-    });
-
-    languageLinks.cn.addEventListener('click', (e) => {
-        e.preventDefault();
-        setLanguage('cn');
-    });
-
-    // Set default language (English in this case)
     setLanguage('en');
 </script>
 
-
 <script>
-// Open WeChat QR Code Modal
 const wechatIcon = document.getElementById("wechat-icon");
 const qrModal = document.getElementById("wechat-qr-modal");
 const closeModal = document.getElementById("close-modal");
 
 wechatIcon.addEventListener("click", (e) => {
-    e.preventDefault(); // Prevent the page from scrolling to the top
-    qrModal.style.display = "block"; // Show modal
+    e.preventDefault();
+    qrModal.style.display = "block";
 });
-
 closeModal.addEventListener("click", () => {
-    qrModal.style.display = "none"; // Hide modal
+    qrModal.style.display = "none";
 });
-
-// Close the modal when clicking outside the modal content
 window.addEventListener("click", (e) => {
     if (e.target === qrModal) {
         qrModal.style.display = "none";
     }
 });
-
 </script>
-
 
 </body>
 </html>
